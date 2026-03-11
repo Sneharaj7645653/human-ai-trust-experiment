@@ -72,7 +72,7 @@ source venv/bin/activate
 
 pip install fastapi uvicorn loguru pydantic
 
-python main.py
+python3 main.py
 ```
 
 The server will run at **http://localhost:8000**.
