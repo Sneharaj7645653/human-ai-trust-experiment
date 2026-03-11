@@ -77,7 +77,7 @@ The server will run at **http://localhost:5173**.
 ### Directory Structure
 
 ```plaintext
-gsoc-trust-experiment/
+human-ai-trust-experiment/
 ├── backend/
 │   ├── main.py            # API logic and Pydantic schema
 │   ├── venv/              # Python virtual environment
