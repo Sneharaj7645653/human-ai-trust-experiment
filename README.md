@@ -47,23 +47,37 @@ Every user interaction generates a log entry with the following structure:
 | `confidence_rating` | Integer | Post-task user rating (1–5) |
 | `timestamp` | ISO8601 | Server-side UTC timestamp of the event |
 
-### Getting Started
+### Getting 
 
-#### 1. Backend Setup (FastAPI)
+#### 1. Clone the Repository
+
+Open your terminal and run:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/human-ai-trust-experiment.git
+
+cd human-ai-trust-experiment
+```
+
+#### 2. Backend Setup (FastAPI)
 
 Navigate to the **backend** folder and set up the Python environment:
 
 ```bash
 cd backend
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install fastapi uvicorn loguru pydantic
+
 python main.py
 ```
 
 The server will run at **http://localhost:8000**.
 
-#### 2. Frontend Setup (React)
+#### 3. Frontend Setup (React)
 
 Open a new terminal, navigate to the **frontend** folder, and launch the UI:
 
