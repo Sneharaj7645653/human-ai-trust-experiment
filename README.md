@@ -119,3 +119,36 @@ This file uses a single-line JSON format (JSONL-style), making it natively compa
 - **Behavioral Tracking:** Captures real-time decision outcomes and interaction speed.
 
 - **Stretch Goal:** Implemented a **Post-Task Confidence Rating** to compare attitudinal trust with actual behavioral reliance.
+
+### Preliminary Test Results (Internal Audit)
+
+To verify the system’s functionality, a small pilot test was conducted with **N = 15 trials**. The results confirm that the randomization logic operates correctly and that the logging pipeline reliably captures behavioral metrics and timestamps.
+
+#### 1. Randomization Distribution
+
+The automated 50/50 condition assignment behaved within expected bounds for a small sample:
+
+- **Experimental (Humanlike):** 9 trials (60%)  
+- **Control (Robotic):** 6 trials (40%)
+
+Given the limited sample size, this distribution is consistent with a randomized split.
+
+#### 2. Behavioral Metrics Analysis
+
+**Acceptance Rates**
+
+Participants accepted the AI recommendation in **60% of the trials** overall. Within the **Experimental (Humanlike)** condition, decision latency showed noticeable variation, ranging from **1,576 ms** to **15,399 ms**, indicating both rapid and deliberative responses.
+
+**Confidence Calibration**
+
+The system successfully captured the post-decision confidence ratings. Responses covered the full **1–5 scale**, with a **mean confidence rating of 3.13**, confirming that the multi-step submission flow (decision → rating → logging) functions correctly.
+
+#### 3. System Integrity
+
+**Latency Precision**
+
+Response latency was recorded using `performance.now()`, capturing fine-grained timing differences (e.g., **1683.1 ms vs. 1920.8 ms**), demonstrating high-resolution timing instrumentation.
+
+**Data Validation**
+
+All **15 entries (100%)** were successfully validated using the **Pydantic schema** and serialized into the `behavioral_data.json` log file without data loss or formatting errors.
