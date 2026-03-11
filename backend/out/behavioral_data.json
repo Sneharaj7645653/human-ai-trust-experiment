@@ -24,3 +24,4 @@
 {"participant_id":"PID-klz1cnx88","condition":"Control (Robotic)","decision":"Accept","latency_ms":4737.0,"timestamp":"2026-03-11T15:00:36.444Z","confidence_rating":2}
 {"participant_id":"PID-2eaezgoti","condition":"Experimental (Humanlike)","decision":"Override","latency_ms":2216.4,"timestamp":"2026-03-11T15:00:39.460Z","confidence_rating":4}
 {"participant_id":"PID-88xegrkyf","condition":"Experimental (Humanlike)","decision":"Accept","latency_ms":1802.3,"timestamp":"2026-03-11T15:00:42.294Z","confidence_rating":2}
+{"participant_id":"PID-ka780kqpk","condition":"Experimental (Humanlike)","decision":"Accept","latency_ms":77099.0,"timestamp":"2026-03-11T15:34:01.444Z","confidence_rating":2}
