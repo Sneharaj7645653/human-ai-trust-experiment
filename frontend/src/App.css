@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.id-badge {
+  background: #334155;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.cue-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.cue-card.A {
+  border-left: 5px solid #64748b;
+}
+
+.cue-card.B {
+  border-left: 5px solid var(--accent);
+}
+
+.avatar {
+  font-size: 28px;
+}
+
+.content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.content p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.accept {
+  background: var(--accent);
+  color: white;
+}
+
+.reject {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Confidence Rating Styles */
+.rating-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-rating {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #334155;
+  background: transparent;
+  color: #94a3b8;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-rating:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  transform: scale(1.1);
+}
+
+.instruction-text {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
