@@ -47,7 +47,7 @@ Every user interaction generates a log entry with the following structure:
 | `confidence_rating` | Integer | Post-task user rating (1–5) |
 | `timestamp` | ISO8601 | Server-side UTC timestamp of the event |
 
-### Getting 
+### Getting Started
 
 #### 1. Clone the Repository
 
@@ -107,6 +107,10 @@ human-ai-trust-experiment/
 The experiment captures all behavioral metrics in two ways:
 1. **Live Feed:** View structured JSON logs in the backend terminal as they happen.
 2. **Persistent Storage:** All data is saved to `backend/out/behavioral_data.json`. 
+
+
+> [!TIP]
+> This file uses a single-line JSON format (JSONL-style), making it natively compatible with data science tools like **Python Pandas** or **R** for downstream statistical analysis.
 
 This file uses a single-line JSON format (JSONL-style), making it natively compatible with data science tools like **Python Pandas** or **R** for downstream statistical analysis.
 
